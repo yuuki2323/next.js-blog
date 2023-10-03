@@ -1,19 +1,27 @@
 "use client";
-import React, { useState } from "react";
+
 import { create } from "domain";
-import React from "react";
+import React, { useState } from "react";
+import { createArticle } from "@/blogAPI";
+import { useRouter } from "next/navigation";
+
 
 const CreateBlogPage = () => {
 
-  
+  const router = useRouter();
   const [id,setId] = useState<string>("");
   const [title,setTitle] = useState<string>("");
   const [content,setContent] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) =>{
   e.preventDefault();
-
+  setLoading(true);
   await createArticle(id,title,content);
+
+  setLoading(false);
+  router.push("/");
+  router.refresh();
 };
 
   return (
@@ -49,7 +57,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) =>{
           </div>
     
 
-          <button type="submit" className='py-2 px-4 border rounded-md bg-orange-300'>投稿
+          <button type="submit" className={`py-2 px-4 border rounded-md  ${loading ? "bg-orange-300 cursor-not-allowed ": "bg-orange-400 hover:bg-orange-500"}`}
+          disabled={loading}>投稿
           </button>
         
       </form>

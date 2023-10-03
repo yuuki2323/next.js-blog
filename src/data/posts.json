@@ -1,23 +1,16 @@
-{ 
-   "posts": [
+{
+  "posts": [
     {
-      "id":"next.js13-udemy",
-      "title":"Next.js13をUdemyで学ぶ",
-      "content":"shincodeさんの教材で学ぶ",
-      "contentAt":"2022/2/2"
+      "id": "json-server",
+      "title": "jsonサーバー",
+      "content": "コーディングなしで完全な偽の REST API を30 秒以内に取得します.プロトタイピングとモック作成のための迅速なバックエンドを必要とするフロントエンド開発者向けに <3 で作成されました.Egghead.io の無料ビデオ チュートリアル - json-server を使用したAPI の作成JSONPlaceholder - ライブ実行バージョン私の JSON サーバー- インストールは不要で、独自のデータを使用します.以下も参照してください。",
+      "contentAt": "2022/2/3"
     },
     {
-      "id":"json-server",
-      "title":"jsonサーバー",
-      "content":"コーディングなしで完全な偽の REST API を30 秒以内に取得します.プロトタイピングとモック作成のための迅速なバックエンドを必要とするフロントエンド開発者向けに <3 で作成されました.Egghead.io の無料ビデオ チュートリアル - json-server を使用したAPI の作成JSONPlaceholder - ライブ実行バージョン私の JSON サーバー- インストールは不要で、独自のデータを使用します.以下も参照してください。",
-      "contentAt":"2022/2/3"
+      "id": "revalidate",
+      "title": "データの再検証",
+      "content": "コンテンツの内容",
+      "contentAt": "2022/2/6"
     }
-    ,
-    {
-      "id":"revalidate",
-      "title":"データの再検証",
-      "content":"コンテンツの内容",
-      "contentAt":"2022/2/6"
-    }
-   ]
+  ]
 }
